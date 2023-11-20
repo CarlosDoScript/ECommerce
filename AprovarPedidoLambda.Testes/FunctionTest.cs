@@ -27,7 +27,7 @@ namespace AprovarPedidoLambda.Testes
                         Complemento = "apt 123"
                     }
                 },
-                PedidoId = new Guid(),
+                PedidoId = Guid.NewGuid(),
                 StatusPedido = StatusPedidoEnum.AGUARDANDO_PAGAMENTO,
                 ItensPedido = new List<ItemPedido>
                 {
