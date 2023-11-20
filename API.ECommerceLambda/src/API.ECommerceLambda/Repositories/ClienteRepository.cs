@@ -12,24 +12,24 @@ namespace API.ECommerceLambda.Repositories
             _contexto = contexto;
         }
 
-        public Task Adicionar(Cliente cliente)
+        public async Task Adicionar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            await _contexto.SaveAsync<Cliente>(cliente);
         }
 
-        public Task Atualizar(Cliente cliente)
+        public async Task Atualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            await _contexto.SaveAsync<Cliente>(cliente);
         }
 
-        public Task<Cliente?> Buscar()
+        public async Task<Cliente?> Buscar(string documento)
         {
-            throw new NotImplementedException();
+            return await _contexto.LoadAsync<Cliente?>(documento);
         }
 
-        public Task Deletar(string documento)
+        public async Task Deletar(string documento)
         {
-            throw new NotImplementedException();
+            await _contexto.DeleteAsync<Cliente>(documento);
         }
     }
 }

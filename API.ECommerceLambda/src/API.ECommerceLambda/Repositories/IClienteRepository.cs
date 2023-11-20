@@ -6,7 +6,7 @@ namespace API.ECommerceLambda.Repositories
     {
         Task Adicionar(Cliente cliente);
         Task Atualizar(Cliente cliente);
-        Task<Cliente?> Buscar();
+        Task<Cliente?> Buscar(string documento);
         Task Deletar(string documento);
     }
 }
