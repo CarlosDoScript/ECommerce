@@ -1,3 +1,4 @@
+using API.ECommerceLambda.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.ECommerceLambda.Controllers
@@ -12,9 +13,27 @@ namespace API.ECommerceLambda.Controllers
         {
             _logger = logger;
         }
-        
-        [HttpGet]
-        public IActionResult Index()
+
+        [HttpPost]
+        public async Task<IActionResult> CriarCliente(Cliente cliente)
+        {
+            return Ok();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> AtualizarCliente(Cliente cliente)
+        {
+            return Ok();
+        }
+
+        [HttpDelete("{documento}")]
+        public async Task<IActionResult> DeletarCliente(string documento)
+        {
+            return Ok();
+        }
+
+        [HttpGet("{documento}")]
+        public async Task<IActionResult> ObterClientePorDocumento(string documento)
         {
             return Ok();
         }
