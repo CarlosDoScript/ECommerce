@@ -20,13 +20,6 @@ Este projeto é uma implementação de uma aplicação E-Commerce usando a arqui
 - **API Serverless**: Exposição de endpoints seguros e escaláveis através do AWS API Gateway.
 - **Armazenamento de Ativos**: Gerenciamento de imagens e outros ativos usando o AWS S3.
 
-### Como Contribuir
-
-1. Faça um fork do repositório.
-2. Clone o fork localmente.
-3. Implemente novas funcionalidades ou corrija problemas existentes.
-4. Envie um pull request para revisão.
-
 ### Requisitos
 
 - [AWS CLI](https://aws.amazon.com/cli/) configurado com as credenciais apropriadas.
