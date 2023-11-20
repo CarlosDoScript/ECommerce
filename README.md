@@ -1,4 +1,4 @@
-# E-Commerce Serverless Lambda API em .NET com AWS
+# E-Commerce Serverless Lambda Minimal API em .NET com AWS
 
 ## Descrição do Projeto
 
