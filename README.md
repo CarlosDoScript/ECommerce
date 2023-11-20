@@ -39,3 +39,8 @@ Para mais informações sobre como configurar, implantar e utilizar este projeto
 ### Nota
 
 Este projeto está em constante desenvolvimento, ele esta sendo feito através de estudos em cima de cursos em .NET. Feedbacks, contribuições e melhorias são bem-vindos!
+
+### Observação
+
+Este projeto não esta separado em camadas, o principal objetivo é a implementação dos serviços AWS.
+
