@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.ECommerceLambda", "API.ECommerceLambda\src\API.ECommerceLambda\API.ECommerceLambda.csproj", "{3B64D706-9507-4045-B853-0EA29313BF54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprovarPedidoLambda", "AprovarPedidoLambda\src\AprovarPedidoLambda\AprovarPedidoLambda.csproj", "{78C9962A-87E6-4225-93C0-D2EC85FD73B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3B64D706-9507-4045-B853-0EA29313BF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B64D706-9507-4045-B853-0EA29313BF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B64D706-9507-4045-B853-0EA29313BF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C9962A-87E6-4225-93C0-D2EC85FD73B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C9962A-87E6-4225-93C0-D2EC85FD73B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C9962A-87E6-4225-93C0-D2EC85FD73B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C9962A-87E6-4225-93C0-D2EC85FD73B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
