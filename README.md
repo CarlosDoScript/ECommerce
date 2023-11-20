@@ -1,11 +1,11 @@
-# E-Commerce Serverless Lambda Minimal API em .NET com AWS
+# E-Commerce Serverless Lambda Minimal API em .NET com AWS 
+ [![My Skills](https://skillicons.dev/icons?i=cs&perline=3)](https://skillicons.dev)   [![My Skills](https://skillicons.dev/icons?i=dotnet&perline=3)](https://skillicons.dev)    [![My Skills](https://skillicons.dev/icons?i=aws&perline=3)](https://skillicons.dev) 
 
 ## Descrição do Projeto
 
 Este projeto é uma implementação de uma aplicação E-Commerce usando a arquitetura serverless da AWS. A aplicação é construída em .NET, utilizando AWS Lambda para a lógica de negócios, AWS API Gateway para expor APIs, AWS DynamoDB para armazenamento de dados, AWS SQS para a comunicação assíncrona e AWS S3 para o armazenamento de ativos.
 
 ### Tecnologias Utilizadas
-
 - **AWS Lambda**: Funções serverless para a execução de código sem a necessidade de gerenciamento de servidores.
 - **AWS API Gateway**: Serviço para criar, publicar, manter e monitorar APIs de maneira fácil.
 - **AWS DynamoDB**: Banco de dados NoSQL totalmente gerenciado para armazenamento de dados.
