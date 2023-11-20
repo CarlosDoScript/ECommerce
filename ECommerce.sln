@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprovarPedidoLambda", "Apro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceLambda.Domain", "ECommerceLambda.Domain\ECommerceLambda.Domain.csproj", "{A041A9DF-55E1-49E7-AAF8-CDEE9E722AE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprovarPedidoLambda.Testes", "AprovarPedidoLambda.Testes\AprovarPedidoLambda.Testes.csproj", "{5CD52936-1C63-4DD9-8F51-A1C60E64EBBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A041A9DF-55E1-49E7-AAF8-CDEE9E722AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A041A9DF-55E1-49E7-AAF8-CDEE9E722AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A041A9DF-55E1-49E7-AAF8-CDEE9E722AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD52936-1C63-4DD9-8F51-A1C60E64EBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD52936-1C63-4DD9-8F51-A1C60E64EBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD52936-1C63-4DD9-8F51-A1C60E64EBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD52936-1C63-4DD9-8F51-A1C60E64EBBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
