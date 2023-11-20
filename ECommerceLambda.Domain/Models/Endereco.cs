@@ -1,4 +1,4 @@
-﻿namespace API.ECommerceLambda.Models
+﻿namespace ECommerceLambda.Domain.Models
 {
     public class Endereco
     {

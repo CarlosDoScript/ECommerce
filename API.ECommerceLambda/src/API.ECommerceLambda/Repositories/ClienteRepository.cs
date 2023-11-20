@@ -1,5 +1,5 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
-using API.ECommerceLambda.Models;
+using ECommerceLambda.Domain.Models;
 
 namespace API.ECommerceLambda.Repositories
 {

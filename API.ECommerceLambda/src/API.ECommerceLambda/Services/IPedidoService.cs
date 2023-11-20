@@ -1,4 +1,4 @@
-﻿using API.ECommerceLambda.Models;
+﻿using ECommerceLambda.Domain.Models;
 
 namespace API.ECommerceLambda.Services
 {

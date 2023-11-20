@@ -1,4 +1,6 @@
-﻿namespace API.ECommerceLambda.Models
+﻿using ECommerceLambda.Domain.Models;
+
+namespace ECommerceLambda.Domain.Models
 {
     public class Pedido
     {
