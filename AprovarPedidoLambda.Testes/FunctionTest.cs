@@ -46,7 +46,11 @@ namespace AprovarPedidoLambda.Testes
                 {
                     new SQSEvent.SQSMessage
                     {
-                        Body = JsonSerializer.Serialize(pedido)
+                        Body = JsonSerializer.Serialize(pedido),
+                        Attributes = new Dictionary<string, string>()
+                        {
+                            { "ApproximateReceiveCount","1" }
+                        }
                     }
                 }
             };

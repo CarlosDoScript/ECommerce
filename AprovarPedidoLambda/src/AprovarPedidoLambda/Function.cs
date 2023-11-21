@@ -2,6 +2,7 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
+using Amazon.SQS;
 using AprovarPedidoLambda.Repositories;
 using AprovarPedidoLambda.Services;
 using ECommerceLambda.Domain.Models;
@@ -23,6 +24,8 @@ namespace AprovarPedidoLambda
             _serviceCollection.AddScoped<IDynamoDBContext, DynamoDBContext>();
             _serviceCollection.AddScoped<IAprovarPedidoService, AprovarPedidoService>();
             _serviceCollection.AddScoped<IPedidoRepository, PedidoRepository>();
+            _serviceCollection.AddScoped<IAmazonSQS, AmazonSQSClient>();
+            _serviceCollection.AddScoped<IMessageService, MessageService>();
 
             var serviceProvider = _serviceCollection.BuildServiceProvider();
 
@@ -39,7 +42,13 @@ namespace AprovarPedidoLambda
 
         private async Task ProcessarMensagem(SQSEvent.SQSMessage message, ILambdaContext context)
         {
-            context.Logger.Log("Mesagem processada");
+            context.Logger.Log("Mesagem crua");
+            context.Logger.Log(JsonSerializer.Serialize(message));
+
+            context.Logger.Log("ApproximateReceiveCount");
+            context.Logger.Log(message.Attributes["ApproximateReceiveCount"]);
+
+            context.Logger.Log("Body");
             context.Logger.Log(message.Body);
 
             var pedido = JsonSerializer.Deserialize<Pedido>(message.Body);
