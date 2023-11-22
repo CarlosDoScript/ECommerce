@@ -22,7 +22,7 @@ namespace ProcessarPedidoPago.Services
             var notaFiscal = new NotaFiscal
             {
                 DocumentoCliente = pedido.DocumentoCliente,
-                IdNotaFiscal = Guid.NewGuid().ToString(),
+                IdNotaFiscal = Guid.NewGuid(),
                 BaseDeCalculo = pedido.ValorTotal,
                 AliquotaTributo = 20,
                 Descricao = $"Nota Fiscal relativa ao pedido {pedido.PedidoId}"
