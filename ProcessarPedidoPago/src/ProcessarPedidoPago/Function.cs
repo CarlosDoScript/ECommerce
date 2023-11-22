@@ -1,8 +1,11 @@
+using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
 using Amazon.S3;
 using ECommerceLambda.Domain.Models;
 using Microsoft.Extensions.DependencyInjection;
+using ProcessarPedidoPago.Repositories;
 using ProcessarPedidoPago.Services;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text.Json;
@@ -26,8 +29,11 @@ namespace ProcessarPedidoPago
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddScoped<IAmazonS3, AmazonS3Client>();
+            serviceCollection.AddScoped<IAmazonDynamoDB, AmazonDynamoDBClient>();
+            serviceCollection.AddScoped<IDynamoDBContext, DynamoDBContext>();
             serviceCollection.AddScoped<IProcessarPedidoPago, Services.ProcessarPedidoPago>();
             serviceCollection.AddScoped<IStorageService, StorageService>();
+            serviceCollection.AddScoped<INotaFiscalRepository, NotaFiscalRepository>();
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
             _processarPedidoPago = serviceProvider.GetRequiredService<IProcessarPedidoPago>();
