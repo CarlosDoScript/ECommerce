@@ -20,7 +20,3 @@ Este projeto é uma implementação de uma aplicação E-Commerce usando a arqui
 - **API Serverless**: Exposição de endpoints seguros e escaláveis através do AWS API Gateway.
 - **Armazenamento de Ativos**: Gerenciamento de imagens e outros ativos usando o AWS S3.
 
-### Nota
-
-Este projeto está em constante desenvolvimento, ele esta sendo feito através de estudos em cima de cursos em .NET. 
-
