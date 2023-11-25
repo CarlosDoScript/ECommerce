@@ -1,5 +1,6 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
+using Amazon.S3;
 using Amazon.SQS;
 using API.ECommerceLambda.Repositories;
 using API.ECommerceLambda.Services;
@@ -15,7 +16,9 @@ builder.Services.AddScoped<IDynamoDBContext, DynamoDBContext>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 
 builder.Services.AddScoped<IAmazonSQS, AmazonSQSClient>();
+builder.Services.AddScoped<IAmazonS3, AmazonS3Client>();
 builder.Services.AddScoped<IPedidoService, PedidoService>();
+builder.Services.AddScoped<IStorageService, StorageService>();
 
 var app = builder.Build();
 
