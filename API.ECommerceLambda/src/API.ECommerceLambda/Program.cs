@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
+builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
 
 builder.Services.AddScoped<IAmazonDynamoDB, AmazonDynamoDBClient>();
 builder.Services.AddScoped<IDynamoDBContext, DynamoDBContext>();
