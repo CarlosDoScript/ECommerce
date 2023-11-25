@@ -20,20 +20,7 @@ Este projeto é uma implementação de uma aplicação E-Commerce usando a arqui
 - **API Serverless**: Exposição de endpoints seguros e escaláveis através do AWS API Gateway.
 - **Armazenamento de Ativos**: Gerenciamento de imagens e outros ativos usando o AWS S3.
 
-### Requisitos
-
-- [AWS CLI](https://aws.amazon.com/cli/) configurado com as credenciais apropriadas.
-- [Visual Studio](https://visualstudio.microsoft.com/) para desenvolvimento em .NET.
-
-### Documentação
-
-Para mais informações sobre como configurar, implantar e utilizar este projeto, consulte a [documentação](./docs).
-
 ### Nota
 
-Este projeto está em constante desenvolvimento, ele esta sendo feito através de estudos em cima de cursos em .NET. Feedbacks, contribuições e melhorias são bem-vindos!
-
-### Observação
-
-Este projeto não esta separado em camadas, o principal objetivo é a implementação dos serviços AWS.
+Este projeto está em constante desenvolvimento, ele esta sendo feito através de estudos em cima de cursos em .NET. 
 
