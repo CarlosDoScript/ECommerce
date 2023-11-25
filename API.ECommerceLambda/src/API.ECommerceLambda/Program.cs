@@ -18,7 +18,7 @@ builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IAmazonSQS, AmazonSQSClient>();
 builder.Services.AddScoped<IAmazonS3, AmazonS3Client>();
 builder.Services.AddScoped<IPedidoService, PedidoService>();
-builder.Services.AddScoped<IStorageService, StorageService>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
 
 var app = builder.Build();
 
